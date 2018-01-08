@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Constructor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="carForm">
+      <fieldset>
+        <label for="make">Make: </label>
+        <input type="text" name="make" placeholder="Enter your car's make" required> </input>
+      </fieldset>
+      <fieldset>
+        <label for="model">Model: </label>
+        <input type="text" name="model" placeholder="Enter your car's model" required> </input>
+      </fieldset>
+      <fieldset>
+        <label for="year">Newer than 2000? </label>
+        <input type="checkbox" name="year" value="year">
+      </fieldset>
+      <fieldset>
+        <label for="new_car"> Are you interested in a new car? </label>
+        <input type="radio" name="new_car" value="yes">yes
+        <input type="radio" name="new_car" value="no"> no
+      </fieldset>
+      <button id="submitButton" type="submit">Add New Car </button>
+    </form>
+
+    <section>
+      <table>
+        <thead>
+          <th>first name</th>
+          <th>last name</th>
+          <th>enrolled</th>
+          <th>interested in future classes?</th>
+        </thead>
+        <tbody id="carTable">
+          <!-- table data goes here -->
+        </tbody>
+      </table>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
